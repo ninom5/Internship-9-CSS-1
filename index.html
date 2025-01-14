@@ -9,15 +9,18 @@
   <body>
     <header>
       <nav class="header-navigation">
-        <a href="https://www.newyorker.com/">
+        <a href="/" target="_blank">
           <img
+            class="logo"
             src="./assets/images/logo-inverted.svg"
             alt="the new yorker logo"
           />
         </a>
         <ul>
           <li>
-            <a href="https://www.newyorker.com/newsletters?sourceCode=navbar"
+            <a
+              href="https://www.newyorker.com/newsletters?sourceCode=navbar"
+              target="_blank"
               >Newsletter</a
             >
           </li>
@@ -25,6 +28,7 @@
           <li>
             <a
               href="https://www.newyorker.com/auth/initiate?redirectURL=%2Fnews%2Fthe-lede%2Fthe-pressure-campaign-to-get-pete-hegseth-confirmed-as-defense-secretary&source=VERSO_NAVIGATION"
+              target="_blank"
               >Sign in</a
             >
           </li>
@@ -32,9 +36,19 @@
             <button>
               <a
                 href="https://www.newyorker.com/v2/offers/tny338?source=Site_0_JNY_NYR_DESKTOP_GLOBAL_NAV_CTA_0_INTL_PV0_TEST_JAN24_S_ZZ_PANELB&cds_mag_code=NYR&cds_page_id=280146&cds_response_key=94VGAANA1&redirectURL=https%3A%2F%2Fwww.newyorker.com%2Fnews%2Fthe-lede%2Fthe-pressure-campaign-to-get-pete-hegseth-confirmed-as-defense-secretary"
+                target="_blank"
                 >Subscribe</a
               >
             </button>
+          </li>
+          <li>
+            <a href="https://www.newyorker.com/search">
+              <img
+                src="./assets/images/search-regular-24 (1).png"
+                alt="search icon"
+                class="search"
+              />
+            </a>
           </li>
         </ul>
       </nav>
@@ -56,24 +70,24 @@
           <p></p>
         </div>
       </div>
-      <nav class="subArticles">
-        <ul>
-          <li><a>The Latest</a></li>
-          <li><a>News</a></li>
-          <li><a>Books & Culture</a></li>
-          <li><a>Fiction & Poetry</a></li>
-          <li><a>Humor & Cartoons</a></li>
-          <li><a>Magazine</a></li>
-          <li><a>Puzzles & Games</a></li>
-          <li><a>Video</a></li>
-          <li><a>Podcasts</a></li>
-          <li><a>Goings On</a></li>
-          <li><a>Shop</a></li>
-        </ul>
-      </nav>
-      <hr style="border-color: rgba(255, 255, 255, 0.7)" />
     </header>
+    <nav class="subArticles">
+      <ul>
+        <li><a>The Latest</a></li>
+        <li><a>News</a></li>
+        <li><a>Books & Culture</a></li>
+        <li><a>Fiction & Poetry</a></li>
+        <li><a>Humor & Cartoons</a></li>
+        <li><a>Magazine</a></li>
+        <li><a>Puzzles & Games</a></li>
+        <li><a>Video</a></li>
+        <li><a>Podcasts</a></li>
+        <li><a>Goings On</a></li>
+        <li><a>Shop</a></li>
+      </ul>
+    </nav>
     <main>
+      <hr style="border-color: rgba(255, 255, 255, 0.7)" />
       <div id="support">
         <img src="./assets/images/Eustace-Ticker.png" alt="logo" />
         <p>
@@ -88,12 +102,128 @@
       <hr
         style="
           border-color: rgba(255, 255, 255, 0.7);
-          width: 80%;
+          width: 90%;
           justify-self: center;
         "
       />
-      <h1 style="justify-self: center">TODAY'<i>S</i> MIX</h1>
+      <h1
+        style="
+          justify-self: center;
+          padding-bottom: 48px;
+          padding-top: 16px;
+          font-weight: 400;
+        "
+      >
+        TODAY'<i>S</i> MIX
+      </h1>
+
+      <br />
+
+      <div class="cards-container">
+        <div class="card">
+          <div class="card-image-container">
+            <img
+              src="./assets/images/Untitled-3Artboard 1 copy (1).webp"
+              alt="article image"
+            />
+          </div>
+          <div class="card-text-container">
+            <a href="">
+              <h3>
+                Blake Lively, Justin Baldoni, and the Collapse of the Hollywood
+                #MeToo Era
+              </h3>
+              <br />
+            </a>
+            <p>
+              The reportage that thrived in the late twenty-tens cannot break
+              through on today's volatile Internet, where information is
+              misinformation and victims are offenders.
+              <br />
+              <br />
+              <b>By Doreen St.Felix</b>
+            </p>
+          </div>
+        </div>
+
+        <hr class="between-images-hr" />
+
+        <div class="card">
+          <div class="card-image-container">
+            <img src="./assets/images/article2.gif" alt="article image" />
+          </div>
+          <div class="card-text-container">
+            <a href="">
+              <h3>How Do You Know When a System Has Failed?</h3>
+              <br />
+            </a>
+            <p>
+              We see broken system all around us. At least, we think we do.
+
+              <br />
+              <br />
+
+              <b>Joshua Rothman</b>
+            </p>
+          </div>
+        </div>
+
+        <hr class="between-images-hr" />
+
+        <div class="card">
+          <div class="card-image-container">
+            <img src="./assets/images/article3.webp" alt="article image" />
+          </div>
+          <div class="card-text-container">
+            <a href="">
+              <h3>The Enigmatic Artistry of Terrence Malick</h3>
+              <br />
+            </a>
+            <p>
+              The director has long shunned the spotlight, but his work conveys
+              the force of a mighty personality. A new biography offers a rare
+              look at his lifeand work.
+              <br />
+              <br />
+              <b>By Richard Brody</b>
+            </p>
+          </div>
+        </div>
+
+        <hr class="between-images-hr" />
+
+        <div class="card">
+          <div class="card-image-container">
+            <img src="./assets/images/article4.webp" alt="article image" />
+          </div>
+          <div class="card-text-container">
+            <a href="">
+              <h3>What Imperialist game is Trump Playing With Greenland?</h3>
+              <br />
+            </a>
+            <p>
+              The president-elect's brand of America First isolationism has
+              always sat awkwardly with his Napoleonic tendencies
+              <br />
+              <br />
+              <b>By John Casidy</b>
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+        <img src="./assets/images/logo-inverted.svg" alt="page logo" />
+      </div>
+      <hr />
+      <div class="footer-container"></div>
+      <hr />
+      <div class="footer-container"></div>
+      <hr />
+      <div class="footer-container"></div>
+      <hr />
+      <div class="footer-container"></div>
+    </footer>
   </body>
 </html>
