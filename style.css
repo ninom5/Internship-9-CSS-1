@@ -198,7 +198,7 @@ li button {
   border-color: rgba(255, 255, 255, 0.7);
 }
 
-.section2 {
+/* .section2 {
   display: flex;
   width: 100%;
   min-height: 90vh;
@@ -213,10 +213,21 @@ li button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  padding-left: 100px;
+  flex-basis: 50%;
+  padding: 1.5rem;
 }
-
+.section2-article-title h3 {
+  font-family: IrvinHeadingPro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-break: auto;
+  overflow-wrap: normal;
+}
+.section2-article-title p {
+  font-family: TNYAdobeCaslonPro, "Times New Roman", Times, serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
 .section2-article-img {
   width: 50%;
   margin: 32px 48px;
@@ -224,6 +235,73 @@ li button {
 .section2-article-img img {
   width: 407px;
   height: auto;
+} */
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.section2-article {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 1.5rem auto;
+  padding: 0 48px;
+}
+
+.section2-article-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-basis: 50%;
+  padding: 2rem;
+}
+
+.section2-article-title span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.section2-article-title h3 {
+  font-family: IrvinHeadingPro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  line-height: 1.4;
+}
+
+.section2-article-title p {
+  font-family: TNYAdobeCaslonPro, "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.section2-article-img {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  padding-right: 6rem;
+}
+
+.section2-article-img img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
 }
 
 footer {
