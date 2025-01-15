@@ -200,9 +200,98 @@ li button {
 
 footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: black;
   width: 100%;
   height: auto;
+}
+.footer-img-container {
+  padding-top: calc(20px);
+  align-self: center;
+  height: 60px;
+}
+
+.hr {
+  width: 90%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-second-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.footer-second-container__element-nav {
+  width: 50%;
+  padding: 32px 0;
+  margin-left: 70px;
+}
+.footer-second-container__element-nav p {
+  text-transform: none;
+  font-family: IrvinText, IrvinHeadingPro, Georgia, "Times New Roman", Times,
+    serif;
+  font-feature-settings: normal;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-bottom: 8px;
+  margin-left: 40px;
+}
+
+.footer-second-container__element-list {
+  display: block;
+  column-count: 2;
+  column-gap: 2rem;
+  height: auto;
+  text-align: left;
+  list-style: none;
+}
+.footer-second-container__element-list li a {
+  color: rgb(162, 162, 162);
+  font-size: 14px;
+  font-family: Graphik, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.footer-third-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.footer-third-container__element-nav {
+  width: 100%;
+  padding: 32px 0;
+  margin-left: 70px;
+}
+.footer-third-container__element-nav ul {
+  display: block;
+  column-count: 4;
+  column-gap: 0.5rem;
+}
+.footer-third-container__element-list li a {
+  color: rgb(162, 162, 162);
+  font-size: 14px;
+  font-family: Graphik, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.last-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.copyright {
+  width: 60%;
+  height: auto;
+  margin: 32px 0;
+  margin-left: 70px;
+}
+.copyright p {
+  color: white;
+  font-size: 10px;
+  font-family: Graphik, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(162, 162, 162);
 }
