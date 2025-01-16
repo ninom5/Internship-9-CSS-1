@@ -294,6 +294,72 @@ a {
   border-radius: 8px;
 }
 
+.section3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.section3 h2 {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: IrvinHeadingPro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 20px 0;
+}
+.section3 h4 {
+  font-family: TNYAdobeCaslonPro, "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.games-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 60vh;
+  padding: 0 48px;
+  margin: 50px 0;
+}
+.game-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  padding: 24px;
+  text-align: center;
+  border-radius: 1rem;
+  height: auto;
+  cursor: pointer;
+  align-items: center;
+  width: 18%;
+  height: auto;
+  position: relative;
+}
+.game-card h3 {
+  font-family: IrvinHeadingPro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.game-card p {
+  font-family: TNYAdobeCaslonPro, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 17px;
+  /* position: relative; */
+  width: 100%;
+}
+/* .game-card p::after {
+  content: " »";
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-size: 17px;
+  color: black;
+} */
+.game-card img {
+  margin: auto 0;
+
+  width: 60%;
+}
 footer {
   display: flex;
   flex-direction: column;
