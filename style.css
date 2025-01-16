@@ -349,7 +349,7 @@ a {
   font-size: 15px;
   width: 100%;
 }
-.game-card p:hover {
+.game-card p:nth-of-type(2):hover {
   text-decoration: underline;
 }
 
