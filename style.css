@@ -340,21 +340,19 @@ a {
   font-size: 18px;
   font-weight: 400;
 }
+.game-card h3:hover {
+  text-decoration: underline;
+}
 .game-card p {
   font-family: TNYAdobeCaslonPro, "Times New Roman", Times, serif;
   font-weight: 400;
-  font-size: 17px;
-  /* position: relative; */
+  font-size: 15px;
   width: 100%;
 }
-/* .game-card p::after {
-  content: " »";
-  position: absolute;
-  top: 0;
-  right: 30px;
-  font-size: 17px;
-  color: black;
-} */
+.game-card p:hover {
+  text-decoration: underline;
+}
+
 .game-card img {
   margin: auto 0;
 
@@ -456,6 +454,41 @@ footer {
   font-size: 10px;
   font-family: Graphik, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: rgb(162, 162, 162);
+}
+.social-media-container {
+  display: flex;
+  width: 40%;
+}
+.social-media-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: 80px;
+}
+
+.footer-container {
+  display: flex;
+  height: 100px;
+}
+.footer-container button {
+  margin: auto;
+  color: lightgray;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.footer-container button::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-size: 15px;
+  margin-right: 10px;
 }
 
 @media (min-width: 360px) and (max-width: 770px) {
