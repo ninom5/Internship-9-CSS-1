@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
-  overflow-x: hidden;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 body {
   display: flex;
@@ -27,6 +27,9 @@ header {
   top: 0;
   z-index: 1000;
 }
+/* .header-navigation:has(.subArticles:sticky).header-navigation {
+  background-color: white;
+} */
 
 .header-nav-list {
   display: flex;
@@ -123,6 +126,7 @@ li button {
   padding: 0;
   margin: 0 auto;
   /* object-fit: contain; */
+  overflow: hidden;
 }
 .header-container__element p {
   text-align: center;
@@ -763,6 +767,7 @@ footer {
     flex-direction: column;
     align-items: center;
     height: auto;
+    padding: 0;
     margin: 40px 0;
   }
   .game-card {
