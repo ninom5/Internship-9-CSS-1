@@ -56,6 +56,7 @@ footer {
   font-size: 14px;
   font-family: Graphik, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 .mobile-hr {
   height: 0px;
 }
@@ -87,6 +88,7 @@ footer {
   width: 100%;
   height: auto;
 }
+
 .copyright {
   width: 60%;
   height: auto;
@@ -99,10 +101,12 @@ footer {
   font-family: Graphik, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: rgb(162, 162, 162);
 }
+
 .social-media-container {
   display: flex;
   width: 40%;
 }
+
 .social-media-list {
   display: flex;
   flex-direction: row;
@@ -115,9 +119,9 @@ footer {
 
 .footer-container {
   display: flex;
-  /* height: 150px; */
   margin: 32px auto 64px auto;
 }
+
 .footer-container button {
   margin: auto;
   color: lightgray;
@@ -163,6 +167,7 @@ footer {
   .footer-third-container__element-list li {
     margin-bottom: 32px;
   }
+
   .mobile-hr {
     width: 90%;
     height: 1px;
@@ -206,7 +211,6 @@ footer {
     margin-bottom: 15px;
     margin-top: 20px;
     margin-right: auto;
-    /* padding-left: 10px; */
   }
 
   .social-media-list li {
@@ -247,6 +251,7 @@ footer {
   .footer-third-container__element-list li {
     margin-bottom: 32px;
   }
+
   .mobile-hr {
     width: 90%;
     height: 1px;
@@ -290,9 +295,7 @@ footer {
     margin-bottom: 15px;
     margin-top: 20px;
     margin-right: auto;
-    /* padding-left: 10px; */
   }
-
   .social-media-list li {
     margin: 5px;
   }
