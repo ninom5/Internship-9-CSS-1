@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The New Yorker</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
+
   <body>
     <header>
       <nav class="header-navigation">
@@ -41,6 +42,7 @@
               alt=""
             />
           </div>
+
           <nav class="hamburger-list-categories-nav">
             <ul>
               <li><a href="https://www.newyorker.com/latest">THE LATEST</a></li>
@@ -72,12 +74,22 @@
               </li>
               <li><a href="https://store.newyorker.com/">SHOP</a></li>
             </ul>
+
             <hr class="hamburger-hr" />
           </nav>
           <ul class="hamburger-list-footer">
-            <li><a href="">Search</a></li>
-            <li><a href="">Sign in</a></li>
-            <li><a href="">Newsletter</a></li>
+            <li><a href="https://www.newyorker.com/search">Search</a></li>
+            <li>
+              <a
+                href="https://www.newyorker.com/auth/initiate?redirectURL=%2F&source=VERSO_NAVIGATION"
+                >Sign in</a
+              >
+            </li>
+            <li>
+              <a href="https://www.newyorker.com/newsletters?sourceCode=navbar"
+                >Newsletter</a
+              >
+            </li>
           </ul>
         </div>
 
@@ -97,14 +109,38 @@
               >Sign in</a
             >
           </li>
-          <li>
-            <button>
+          <li class="subscribe-item">
+            <button class="subscribe-button">
               <a
                 href="https://www.newyorker.com/v2/offers/tny338?source=Site_0_JNY_NYR_DESKTOP_GLOBAL_NAV_CTA_0_INTL_PV0_TEST_JAN24_S_ZZ_PANELB&cds_mag_code=NYR&cds_page_id=280146&cds_response_key=94VGAANA1&redirectURL=https%3A%2F%2Fwww.newyorker.com%2Fnews%2Fthe-lede%2Fthe-pressure-campaign-to-get-pete-hegseth-confirmed-as-defense-secretary"
                 target="_blank"
                 >Subscribe</a
               >
             </button>
+            <div class="subscribe-container">
+              <a href="">
+                <div class="subscribe-container__text">
+                  <h3>Unlimited Access</h3>
+                  <h4>Welcome Offer:</h4>
+
+                  <p>
+                    <span style="text-decoration: line-through">$2.50</span> $1
+                    a week for one year, plus get a free tote.
+                  </p>
+                  <button class="subscribe-container__text__button">
+                    Subscribe
+                  </button>
+                  <br />
+                  <p style="font-weight: 550">Cancel anytime.</p>
+                </div>
+                <div class="subscribe-container__image">
+                  <img
+                    src="./assets/images/NYR_MemDaySale_Intender_Spot_Art_466x733.png"
+                    alt="subscribe hover image"
+                  />
+                </div>
+              </a>
+            </div>
           </li>
           <li>
             <a href="https://www.newyorker.com/search">
@@ -122,40 +158,54 @@
         <div class="header-container__element">
           <img src="./assets/images/Mayer-Hegsethcropped.jpg" alt="" />
         </div>
+
         <div class="header-container__element">
           <h1>
             THE PRESSURE CAMPAIGN TO GET PETE HEGSETH CONFIRMED AS DEFENSE
             SECRETARY
           </h1>
-          <p>
+
+          <p style="padding-bottom: 10px">
             Supporters of Donald Trump's nominee have intimidated <br />
             potential witnesses and supressed F.B.I. backgorund check <br />
             of the former Fox News host in the run-up to his Senate <br />
             hearing. <b>Jane Mayer</b> reports.
           </p>
-          <p></p>
         </div>
       </div>
     </header>
 
     <nav class="subArticles">
       <ul>
-        <li><a>The Latest</a></li>
-        <li><a>News</a></li>
-        <li><a>Books & Culture</a></li>
-        <li><a>Fiction & Poetry</a></li>
-        <li><a>Humor & Cartoons</a></li>
-        <li><a>Magazine</a></li>
-        <li><a>Puzzles & Games</a></li>
-        <li><a>Video</a></li>
-        <li><a>Podcasts</a></li>
-        <li><a>Goings On</a></li>
-        <li><a>Shop</a></li>
+        <li><a href="https://www.newyorker.com/latest">The Latest</a></li>
+        <li><a href="https://www.newyorker.com/news">News</a></li>
+        <li><a href="https://www.newyorker.com/culture">Books & Culture</a></li>
+
+        <li>
+          <a href="https://www.newyorker.com/fiction-and-poetry"
+            >Fiction & Poetry</a
+          >
+        </li>
+
+        <li><a href="https://www.newyorker.com/humor">Humor & Cartoons</a></li>
+        <li><a href="https://www.newyorker.com/magazine">Magazine</a></li>
+
+        <li>
+          <a href="https://www.newyorker.com/crossword-puzzles-and-games"
+            >Puzzles & Games</a
+          >
+        </li>
+
+        <li><a href="https://www.newyorker.com/video">Video</a></li>
+        <li><a href="https://www.newyorker.com/podcasts">Podcasts</a></li>
+        <li><a href="https://www.newyorker.com/goings-on">Goings On</a></li>
+        <li><a href="https://store.newyorker.com/">Shop</a></li>
       </ul>
     </nav>
 
     <main>
       <hr style="border-color: rgba(255, 255, 255, 0.7)" />
+
       <div id="support">
         <img src="./assets/images/Eustace-Ticker.png" alt="logo" />
         <p>
@@ -167,6 +217,7 @@
           >
         </p>
       </div>
+
       <hr
         style="
           border-color: rgba(255, 255, 255, 0.7);
@@ -195,6 +246,7 @@
               alt="article image"
             />
           </div>
+
           <div class="card-text-container">
             <a
               href="https://www.newyorker.com/culture/critics-notebook/blake-lively-justin-baldoni-and-the-collapse-of-the-hollywood-metoo-era"
@@ -205,6 +257,7 @@
               </h3>
               <br />
             </a>
+
             <p>
               The reportage that thrived in the late twenty-tens cannot break
               through on today's volatile Internet, where information is
@@ -222,6 +275,7 @@
           <div class="card-image-container">
             <img src="./assets/images/article2.gif" alt="article image" />
           </div>
+
           <div class="card-text-container">
             <a
               href="https://www.newyorker.com/culture/open-questions/how-do-you-know-when-a-system-has-failed"
@@ -246,6 +300,7 @@
           <div class="card-image-container">
             <img src="./assets/images/article3.webp" alt="article image" />
           </div>
+
           <div class="card-text-container">
             <a
               href="https://www.newyorker.com/culture/the-front-row/the-enigmatic-artistry-of-terrence-malick"
@@ -253,6 +308,7 @@
               <h3>The Enigmatic Artistry of Terrence Malick</h3>
               <br />
             </a>
+
             <p>
               The director has long shunned the spotlight, but his work conveys
               the force of a mighty personality. A new biography offers a rare
@@ -270,6 +326,7 @@
           <div class="card-image-container">
             <img src="./assets/images/article4.webp" alt="article image" />
           </div>
+
           <div class="card-text-container">
             <a
               href="https://www.newyorker.com/news/the-financial-page/what-imperialist-game-is-donald-trump-playing-with-greenland"
@@ -297,6 +354,7 @@
               <div>
                 <span>PROFILES</span>
               </div>
+
               <div id="subarticle">
                 <h3>
                   LORNE MICHAELS IS THE REAL STAR OF "SATURDAY NIGHT LIVE"
@@ -306,7 +364,9 @@
                   adding to his list of oracular pronouncements—about producing
                   TV, making comedy, and living the good life.
                 </p>
+
                 <br />
+
                 <b>By Susan Morrison</b>
               </div>
             </div>
@@ -366,6 +426,7 @@
         </div>
       </div>
     </main>
+
     <footer>
       <div class="footer-img-container">
         <img src="./assets/images/logo-inverted.svg" alt="page logo" />
@@ -412,30 +473,37 @@
                 >Manage Account</a
               >
             </li>
+
             <li>
               <a href="https://store.newyorker.com/">Shop The New Yorker</a>
             </li>
+
             <li>
               <a href="https://condenaststore.com/art/new+yorker+covers"
                 >Buy Covers and Cartoons</a
               >
             </li>
+
             <li>
               <a href="https://condenaststore.com/conde-nast-brand/thenewyorker"
                 >Conde Nast Store</a
               >
             </li>
+
             <li>
               <a href="https://www.newyorker.com/about/digital-access"
                 >Digital Access</a
               >
             </li>
+
             <li>
               <a href="https://www.newyorker.com/newsletter">Newsletters</a>
             </li>
+
             <li>
               <a href="https://www.newyorker.com/jigsaw">Jigsaw Puzzle</a>
             </li>
+
             <li><a href="https://www.newyorker.com/about/feeds">RSS</a></li>
           </ul>
         </nav>
@@ -458,21 +526,25 @@
               <a href="https://www.condenast.com/advertising">Media Kot</a>
             </li>
             <li><a href="https://www.newyorker.com/about/press">Press</a></li>
+
             <li>
               <a href="https://www.newyorker.com/about/accessibility-help"
                 >Accessibility Help</a
               >
             </li>
+
             <li>
               <a href="https://www.condenast.com/user-agreement/"
                 >User Agreement</a
               >
             </li>
+
             <li>
               <a href="http://www.condenast.com/privacy-policy#privacypolicy"
                 >Privacy Policy</a
               >
             </li>
+
             <li>
               <a
                 href="http://www.condenast.com/privacy-policy#privacypolicy-california"
@@ -506,6 +578,7 @@
                   alt="instagram logo"
               /></a>
             </li>
+
             <li>
               <a href="https://www.tiktok.com/@newyorker?lang=en"
                 ><img
@@ -513,6 +586,7 @@
                   alt="tiktok logo"
               /></a>
             </li>
+
             <li>
               <a href="https://www.threads.net/@newyorkermag"
                 ><img
@@ -521,6 +595,7 @@
                   alt="threads logo"
               /></a>
             </li>
+
             <li>
               <a href="https://twitter.com/NewYorker/"
                 ><img
@@ -529,6 +604,7 @@
                   style="width: 24px; height: 24px"
               /></a>
             </li>
+
             <li>
               <a href="https://www.facebook.com/newyorker/"
                 ><img
@@ -536,6 +612,7 @@
                   alt="facebook logo"
               /></a>
             </li>
+
             <li>
               <a href="https://www.linkedin.com/company/the-new-yorker/"
                 ><img
@@ -543,6 +620,7 @@
                   alt="linkedin logo"
               /></a>
             </li>
+
             <li>
               <a href="https://www.youtube.com/user/NewYorkerDotCom/"
                 ><img

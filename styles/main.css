@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.subArticles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  position: sticky;
+  top: 72px;
+  background-color: white;
+  z-index: 1000;
+}
+.subArticles ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 12px;
+}
+.subArticles ul li a {
+  font-size: 14px;
+  font-weight: 520;
+  color: black;
+  cursor: pointer;
+}
+
+#support {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-family: "Graphik", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  padding: 15px 0px;
+}
+#support img {
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  width: 90%;
+  justify-self: center;
+}
+.card {
+  width: 310px;
+  height: 550px;
+  cursor: pointer;
+}
+.card-image-container {
+  width: inherit;
+}
+.card-image-container img {
+  width: inherit;
+  height: 220px;
+}
+.card-text-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "TNYAdobeCaslonPro", "Times New Roman", Times, serif;
+}
+.card-text-container a h3 {
+  font-weight: 500;
+  font-family: "TNYAdobeCaslonPro", "Times New Roman", Times, serif;
+  font-size: 22px;
+}
+.card-text-container a h3:hover {
+  text-decoration: underline;
+}
+
+.between-images-hr {
+  rotate: 90;
+  height: 220px;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.section2-article {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1500px;
+  margin: 1.5rem auto;
+  padding: 0 48px;
+}
+
+.section2-article-title {
+  display: flex;
+  /* flex-grow: 0;
+  flex-shrink: 0; */
+  flex-basis: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+#subarticle {
+  width: 80%;
+}
+.section2-article-title span {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: block;
+  font-family: IrvinText, IrvinHeadingPro, Georgia, "Times New Roman", Times,
+    serif;
+  color: rgb(219, 51, 52);
+}
+
+.section2-article-title h3 {
+  font-family: IrvinHeadingPro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  overflow-wrap: normal;
+  /* line-break: auto; */
+  margin: 0.5rem 0;
+  line-height: 1.4;
+}
+
+.section2-article-title p {
+  font-family: TNYAdobeCaslonPro, "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.section2-article-img {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.section2-article-img img {
+  max-width: 95%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.section3 h2 {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: IrvinHeadingPro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 20px 0;
+}
+.section3 h4 {
+  font-family: TNYAdobeCaslonPro, "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.games-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 60vh;
+  padding: 0 48px;
+  margin: 50px 0;
+}
+.game-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  padding: 24px;
+  text-align: center;
+  border-radius: 1rem;
+  height: auto;
+  cursor: pointer;
+  align-items: center;
+  width: 22%;
+  height: auto;
+  position: relative;
+}
+/* .game-card:last-child::after {
+  content: ">>";
+  position: absolute;
+  top: 0;
+  left: 0px;
+} */
+.game-card h3 {
+  font-family: IrvinHeadingPro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.game-card h3:hover {
+  text-decoration: underline;
+}
+.game-card p {
+  font-family: TNYAdobeCaslonPro, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 15px;
+  width: 100%;
+}
+.game-card p:nth-of-type(2):hover {
+  text-decoration: underline;
+}
+
+.game-card img {
+  margin: auto 0;
+
+  width: 60%;
+}
+
+@media (min-width: 360px) and (max-width: 770px) {
+  /* #hamburger-toggle:checked ~ .hamburger-btn::after {
+    content: "x";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+  } */
+
+  .subArticles {
+    display: none;
+  }
+  #support {
+    display: flex;
+    width: 90%;
+    flex-wrap: nowrap;
+    padding: 16px 0;
+    font-weight: 400;
+    font-size: 13px;
+    align-items: center;
+    justify-self: center;
+  }
+  #support img {
+    margin: 10px;
+  }
+
+  .cards-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 30px;
+  }
+  .cards-container::before,
+  .cards-container::after {
+    content: "";
+    width: 10px;
+    flex-shrink: 0;
+  }
+
+  .card {
+    flex-shrink: 0;
+    width: 240px;
+    height: 500px;
+    cursor: pointer;
+  }
+
+  .card-image-container img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .section2-article {
+    flex-direction: column;
+    padding: 0;
+  }
+  .section2-article-title {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+  #subarticle {
+    width: 97%;
+  }
+  #subarticle h3 {
+    font-family: IrvinHeadingPro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0.5rem 0;
+    line-height: 1.4;
+    width: 100%;
+  }
+  .section2-article-img {
+    width: 100%;
+    padding: 2rem 0;
+    justify-content: center;
+  }
+  .section2-article-img img {
+    max-width: 90%;
+    border-radius: 0;
+  }
+  .section2-article-title span {
+    font-weight: 400;
+  }
+  #subarticle p {
+    font-weight: 200;
+    font-size: 15px;
+  }
+
+  .section3 {
+    height: auto;
+  }
+  .games-card-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0;
+    margin: 40px 0;
+  }
+  .game-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    /* gap: 16px; */
+    width: 80%;
+    padding: 16px;
+    height: auto;
+    align-items: center;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+
+  .game-card h3 {
+    grid-column: 1 / 2;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .game-card p {
+    grid-column: 1 / 2;
+    font-size: 13px;
+    margin: 0;
+    color: rgb(51, 51, 51);
+    text-transform: none;
+    font-family: TNYAdobeCaslonPro, "Times New Roman", Times, serif;
+    font-feature-settings: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    line-break: auto;
+    line-height: 1.41176em;
+    font-size: 17px;
+    font-weight: 400;
+    overflow-wrap: normal;
+  }
+
+  .game-card img {
+    grid-column: 2 / 3;
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    align-self: center;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1050px) {
+  .subArticles {
+    display: none;
+  }
+
+  .cards-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 30px;
+  }
+  .cards-container::before,
+  .cards-container::after {
+    content: "";
+    width: 10px;
+    flex-shrink: 0;
+  }
+
+  .card {
+    flex-shrink: 0;
+    width: 240px;
+    height: 500px;
+    cursor: pointer;
+  }
+
+  .card-image-container img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .section2-article-title {
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .section2-article-title h3 {
+    font-size: 28px;
+  }
+  .section2-article-title p {
+    font-size: 17px;
+    line-height: 1.41176em;
+  }
+
+  .section2-article-img {
+    padding: 0;
+  }
+
+  .section2-article-img img {
+    width: 100%;
+  }
+
+  .section3 {
+    height: auto;
+  }
+  .games-card-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin: 40px 0;
+  }
+  .game-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    /* gap: 16px; */
+    width: 80%;
+    padding: 16px;
+    height: auto;
+    align-items: center;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+
+  .game-card h3 {
+    grid-column: 1 / 2;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .game-card p {
+    grid-column: 1 / 2;
+    font-size: 13px;
+    margin: 0;
+    color: rgb(51, 51, 51);
+    text-transform: none;
+    font-family: TNYAdobeCaslonPro, "Times New Roman", Times, serif;
+    font-feature-settings: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    line-break: auto;
+    line-height: 1.41176em;
+    font-size: 17px;
+    font-weight: 400;
+    overflow-wrap: normal;
+  }
+
+  .game-card img {
+    grid-column: 2 / 3;
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1050px) {
+  .cards-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .card {
+    width: 20%;
+  }
+  .card-image-container,
+  .card-image-container img {
+    width: 100%;
+  }
+}
