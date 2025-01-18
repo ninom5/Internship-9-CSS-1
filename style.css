@@ -214,6 +214,9 @@ li button {
   font-family: "TNYAdobeCaslonPro", "Times New Roman", Times, serif;
   font-size: 22px;
 }
+.card-text-container a h3:hover {
+  text-decoration: underline;
+}
 
 .between-images-hr {
   rotate: 90;
@@ -342,10 +345,16 @@ a {
   height: auto;
   cursor: pointer;
   align-items: center;
-  width: 18%;
+  width: 22%;
   height: auto;
   position: relative;
 }
+/* .game-card:last-child::after {
+  content: ">>";
+  position: absolute;
+  top: 0;
+  left: 0px;
+} */
 .game-card h3 {
   font-family: IrvinHeadingPro, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
